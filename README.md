@@ -13,11 +13,11 @@ NVIDIA GTX 1650 MaxQ Graphics card
 ## Installation
 
 ```bash
-wget 
+bash <(wget -qO- https://raw.githubusercontent.com/Pragalbha-Patil/fix-nvidia-graphics/main/fix_nvidia.sh)
 ```
 
 ## Usage
-
+Clone the repo and run
 ```bash
 chmod +x fix-nvidia.sh && ./fix-nvidia.sh
 ```
