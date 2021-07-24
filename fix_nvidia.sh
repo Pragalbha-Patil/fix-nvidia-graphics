@@ -14,6 +14,7 @@ stty $old_stty_cfg
 if echo "$answer" | grep -iq "^y" ;then
     # getting the .conf file
     wget https://raw.githubusercontent.com/Pragalbha-Patil/fix-nvidia-graphics/main/nvidia-graphics-drivers.conf
+    sleep 10
     # adding options nvidia-drm modeset=1 to /lib/modprobe.d/nvidia-graphics-drivers.conf 
     sudo cp -a nvidia-graphics-drivers.conf /lib/modprobe.d/
     sudo update-initramfs -u
